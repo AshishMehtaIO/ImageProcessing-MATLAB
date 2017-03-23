@@ -1,7 +1,7 @@
 %Qestion 2 - Horizontal & Vertical Edge Detection Using Prewitt and Sobel 
 %operators
 
-im=imread('Bikesgray.jpg');
+im=imread('Iamges/Bikesgray.jpg');
 [m,n]=size(im);
 
 %Padding with zeros
