@@ -1,5 +1,8 @@
 %Qestion 2 - Horizontal & Vertical Edge Detection Using Prewitt and Sobel 
 %operators
+clear all;
+clc;
+
 
 im=imread('Iamges/Bikesgray.jpg');
 [m,n]=size(im);
@@ -54,3 +57,5 @@ imshow(uint8(prewitt_vertical_result))
 
 figure(3)
 imshow(uint8(prewitt_combined_result))
+
+%similar code for Sobel
