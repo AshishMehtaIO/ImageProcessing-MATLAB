@@ -1,4 +1,6 @@
 %Qestion 1 - Salt Pepper noise removal using Median Filter
+clear all;
+clc;
 
 im=imread('Images/barbara_gray.bmp');
 [m,n]=size(im);
