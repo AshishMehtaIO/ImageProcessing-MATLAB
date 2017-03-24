@@ -20,7 +20,7 @@ imshow(A_eq)
 filter=[1 1 1; 1 -17 1; 1 1 1];    
 
 % Padding with zeros
-Yr = [zeros(1,n);A;zeros(1,n)];
+Yr = [zeros(1,n);A_eq;zeros(1,n)];
 Y = [zeros(m+2,1),Yr,zeros(m+2,1)];
 
 % Sharpening of the Image
