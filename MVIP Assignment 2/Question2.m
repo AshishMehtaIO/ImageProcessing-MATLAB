@@ -42,7 +42,7 @@ for i=(2:m+1)
         elseif (filter<0)
             filter=0;
        end
-       prewitt_vertical_result(i-1,j-1)=mean(filter);
+       prewitt_vertical_result(i-1,j-1)=filter;
     end
 end
 
