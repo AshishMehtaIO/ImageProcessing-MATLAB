@@ -1,4 +1,4 @@
-%Qestion 1 - Salt Pepper noise removal using Median Filter
+%Qestion 1 - Pepper noise removal using Median Filter
 clear all;
 clc;
 
@@ -8,13 +8,9 @@ im=imread('Images/barbara_gray.bmp');
 for i=(1:400)
 row=round((m-1).*rand() + 1);
 column=round((n-1).*rand() + 1);
+im(row,column)=0;
+end
 
-if(im(row,column)>127)
-    im(row,column)=0;
-else
-    im(row,column)=255;
-end
-end
 figure(1)
 imshow(im);
 
