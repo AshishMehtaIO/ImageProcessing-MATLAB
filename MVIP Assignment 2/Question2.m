@@ -4,7 +4,7 @@ clear all;
 clc;
 
 
-im=imread('Iamges/Bikesgray.jpg');
+im=imread('Images/Bikesgray.jpg');
 [m,n]=size(im);
 
 %Padding with zeros
@@ -33,7 +33,7 @@ for i=(2:m+1)
         elseif (filter<0)
             filter=0;
        end
-       prewitt_horizontal_result(i-1,j-1)=filter;
+       prewitt_horizontal_result(i-1,j-1)=mean(filter);
        
        
        filter=sum(sum(double(im2(i-1:i+1,j-1:j+1)).*(prewitt_vertical_filter)));
@@ -42,7 +42,7 @@ for i=(2:m+1)
         elseif (filter<0)
             filter=0;
        end
-       prewitt_vertical_result(i-1,j-1)=filter;
+       prewitt_vertical_result(i-1,j-1)=mean(filter);
     end
 end
 
