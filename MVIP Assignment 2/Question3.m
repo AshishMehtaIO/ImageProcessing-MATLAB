@@ -1,6 +1,6 @@
 clear;
 clc;
-I= imread('barbara_gray.bmp');
+I= imread('Images/barbara_gray.bmp');
 figure(1)
 imshow(I);
 [m, n]= size(I);
