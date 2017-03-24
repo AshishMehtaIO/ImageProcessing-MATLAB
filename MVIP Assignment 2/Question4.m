@@ -3,7 +3,8 @@ clear all;
 clc;
 
 im1=zeros(512);
-im1(240:272,240:272)=255;
+% Insert 32 x 32 white box in centre 
+im1(240:271,240:271)=255;
 figure(1)
 imshow(uint8(im1));
 
